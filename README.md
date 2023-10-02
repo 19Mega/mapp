@@ -14,28 +14,29 @@ my_project/
 |-- .gitignore  
 |-- requirements.txt  
 
-Cómo ejecutar el proyecto:
+Cómo ejecutar el proyecto: 
 
-Para ejecutar tu proyecto Flask, debes asegurarte de que tu entorno virtual esté activado. 
-Si aún no has creado un entorno virtual, puedes hacerlo utilizando el siguiente comando 
-(asegúrate de estar en la carpeta principal de tu proyecto):
+Para ejecutar tu proyecto Flask, debes asegurarte de que tu entorno virtual esté activado.   
+Si aún no has creado un entorno virtual, puedes hacerlo utilizando el siguiente comando   
+(asegúrate de estar en la carpeta principal de tu proyecto):  
 
-python -m venv venv
-Luego, activa el entorno virtual:
+python -m venv venv  
 
-En Windows:
-Copy code
-venv\Scripts\activate
-En macOS y Linux:
+Luego, activa el entorno virtual:  
 
-bash linux:
-source venv/bin/activate
-Después de activar el entorno virtual, puedes ejecutar tu aplicación Flask. 
-Normalmente, en un proyecto Flask, ejecutarás el archivo wsgi.py para iniciar el servidor. 
-Puedes hacerlo de la siguiente manera:
+En Windows:  
+venv\Scripts\activate  
+  
+En macOS y Linux:  
+source venv/bin/activate  
 
-python wsgi.py
-Tu aplicación Flask se ejecutará y estará disponible en la dirección 
-local http://127.0.0.1:5000/. Puedes acceder a ella desde tu navegador web o 
-realizar solicitudes HTTP a tus rutas.
+Después de activar el entorno virtual, puedes ejecutar tu aplicación Flask.  
+Normalmente, en un proyecto Flask, ejecutarás el archivo wsgi.py para iniciar el servidor.  
+
+Puedes hacerlo de la siguiente manera:  
+python wsgi.py  
+
+Tu aplicación Flask se ejecutará y estará disponible en la dirección   
+local http://127.0.0.1:5000/. Puedes acceder a ella desde tu navegador web o   
+realizar solicitudes HTTP a tus rutas.  
 
