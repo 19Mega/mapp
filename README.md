@@ -1,18 +1,18 @@
 # mapp
 Backend
 
-my_project/
-|-- app/
-|   |-- __init__.py
-|   |-- admin.py
-|   |-- app.py
-|   |-- models.py
-|   |-- utils.py
-|   |-- wsgi.py
-|-- venv/
-|-- .env
-|-- .gitignore
-|-- requirements.txt
+my_project/  
+|-- app/  
+|   |-- __init__.py  
+|   |-- admin.py  
+|   |-- app.py  
+|   |-- models.py  
+|   |-- utils.py  
+|   |-- wsgi.py  
+|-- venv/  
+|-- .env  
+|-- .gitignore  
+|-- requirements.txt  
 
 Cómo ejecutar el proyecto:
 
