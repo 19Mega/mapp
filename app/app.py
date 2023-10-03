@@ -30,7 +30,6 @@ def saludo_personalizado(nombre):
     return jsonify(message=f'¡Hola, {nombre}!')
 
 
-
 @app.route('/signup', methods=['POST'])
 def signup():
     request_body = request.get_json(force=True)
