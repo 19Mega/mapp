@@ -33,6 +33,7 @@ Después de activar el entorno virtual, puedes ejecutar tu aplicación Flask.
 Normalmente, en un proyecto Flask, ejecutarás el archivo wsgi.py para iniciar el servidor.  
 
 ## Puedes hacerlo de la siguiente manera:  
+### Hay que entrar en app (cd app) y ejecutar 
 python wsgi.py  
 
 Tu aplicación Flask se ejecutará y estará disponible en la dirección   
@@ -53,7 +54,8 @@ $ git checkout ft-cambiarse-rama
 $ git branch (muestra ramas)  
 
 
-## base datos
+## base datos (no funciona)
 flask db init  # Inicializa las migraciones (solo necesario la primera vez)
 flask db migrate  # Crea las migraciones basadas en tus modelos
 flask db upgrade  # Aplica las migraciones para crear las tablas en la base de datos
+
