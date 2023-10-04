@@ -8,7 +8,7 @@ from flask_jwt_extended import create_access_token, get_jwt_identity, jwt_requir
 
 # Configuración de la aplicación Flask aquí
 app = Flask(__name__)
-app.url_map.strict_slashes = False
+app.url_map.strict_slashes = False # slash at the end of the url
 
 # Configuración de la base de datos SQLAlchemy
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///your_database.db'  # Cambia esto al URI de tu base de datos
@@ -25,9 +25,6 @@ def create_or_migrate_db():
 def hello_world():
     return jsonify(message='¡Hola, mundo!')
 
-@app.route('/saludo/<nombre>')
-def saludo_personalizado(nombre):
-    return jsonify(message=f'¡Hola, {nombre}!')
 
 
 @app.route('/signup', methods=['POST'])
@@ -52,4 +49,3 @@ def signup():
 if __name__ == "__main__":
     generate_sitemap()  # Genera el sitemap cuando se ejecuta el servidor
     create_or_migrate_db()  # Crea o migra la base de datos al ejecutar el servidor
-    application.run()
