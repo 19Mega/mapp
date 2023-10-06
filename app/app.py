@@ -3,7 +3,8 @@ from flask_migrate import Migrate
 from flask_cors import CORS
 from utils import APIException, generate_sitemap
 from admin import setup_admin
-from models import db, User, People, Vehicle, Planet, Favourite
+from models import db, User
+#from models import db, User, People, Vehicle, Planet, Favourite
 from flask_jwt_extended import create_access_token, get_jwt_identity, jwt_required, JWTManager
 
 # Flask app
