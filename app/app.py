@@ -3,14 +3,15 @@ from flask_migrate import Migrate
 from flask_cors import CORS
 from utils import APIException, generate_sitemap
 from admin import setup_admin
-from models import db, User, People, Vehicle, Planet, Favourite
+from models import db, User
+#from models import db, User, People, Vehicle, Planet, Favourite
 from flask_jwt_extended import create_access_token, get_jwt_identity, jwt_required, JWTManager
 
-# Configuración de la aplicación Flask aquí
+# Flask app
 app = Flask(__name__)
 app.url_map.strict_slashes = False # slash at the end of the url
 
-# Configuración de la base de datos SQLAlchemy
+# Data Base Config
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///your_database.db'  # Cambia esto al URI de tu base de datos
 db.init_app(app)
 migrate = Migrate(app, db)
