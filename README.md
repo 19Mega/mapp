@@ -1,61 +1,81 @@
 # mapp
 
-my_project/  
-|-- app/  
-|   |-- __init__.py  
-|   |-- admin.py  
-|   |-- app.py  
-|   |-- models.py  
-|   |-- utils.py  
-|   |-- wsgi.py  
-|-- venv/  
-|-- .env  
-|-- .gitignore  
-|-- requirements.txt  
+## How to Run the Project:
 
-## Cómo ejecutar el proyecto: 
+To run your Flask project, ensure that your virtual environment is activated. If you haven't created a virtual environment yet, you can do so using the following command (make sure you are in the main folder of your project):
 
-Para ejecutar tu proyecto Flask, debes asegurarte de que tu entorno virtual esté activado.   
-Si aún no has creado un entorno virtual, puedes hacerlo utilizando el siguiente comando   
-(asegúrate de estar en la carpeta principal de tu proyecto):  
+```bash
+python -m venv venv
+```
 
-python -m venv venv  
+## Next, activate the virtual environment:
 
-## Luego, activa el entorno virtual:  
+On Windows:
+```bash
+venv\Scripts\activate
+```
 
-En Windows:  
-venv\Scripts\activate  
-  
-En macOS y Linux:  
-source venv/bin/activate  
+On macOS and Linux:
+```bash
+source venv/bin/activate
+```
 
-Después de activar el entorno virtual, puedes ejecutar tu aplicación Flask.  
-Normalmente, en un proyecto Flask, ejecutarás el archivo wsgi.py para iniciar el servidor.  
+After activating the virtual environment, you can run your Flask application. Typically, in a Flask project, you will run the wsgi.py file to start the server.
 
-## Puedes hacerlo de la siguiente manera:  
-### Hay que entrar en app (cd app) y ejecutar 
-python wsgi.py  
+## You can do this as follows:
 
-Tu aplicación Flask se ejecutará y estará disponible en la dirección   
-local http://127.0.0.1:5000/. Puedes acceder a ella desde tu navegador web o   
-realizar solicitudes HTTP a tus rutas.  
+Navigate to the "app" directory (cd app) and run:
 
+```bash
+python wsgi.py
+```
 
+Your Flask application will run and be available at the following local address: http://127.0.0.1:5000/. You can access it from your web browser or make HTTP requests to your routes.
 
-## **iniciar en una carpeta vacia**
-$ git init (inicializa la carpeta como carpeta git)  
-$ git remote add origin https://github.com/19Mega/mapp.git (agregamos repositorio remoto)  
-$ git branch -m "main" (cambiamos nombre de rama actual)  
-$ git pull origin main  (nos traemos los cambios de main)  
+## **Starting in an Empty Folder**
+Initialize the folder as a Git repository:
 
-## **manejo branches**
-$ git branch -b "ft-nueva-rama" (si se crea en github, hay que crearla en git-bash en windows)  
-$ git checkout ft-cambiarse-rama  
-$ git branch (muestra ramas)  
+```bash
+$ git init
+```
 
+Add a remote repository:
 
-## base datos (no funciona)
-flask db init  # Inicializa las migraciones (solo necesario la primera vez)
-flask db migrate  # Crea las migraciones basadas en tus modelos
-flask db upgrade  # Aplica las migraciones para crear las tablas en la base de datos
+```bash
+$ git remote add origin https://github.com/19Mega/mapp.git
+```
 
+Rename the current branch to "main":
+
+```bash
+$ git branch -m "main"
+```
+
+Pull changes from the "main" branch:
+
+```bash
+$ git pull origin main
+```
+
+## **Branch Management**
+Create a new branch, for example, "ft-new-branch":
+
+```bash
+$ git branch -b "ft-new-branch"
+```
+
+Switch to a different branch, e.g., "ft-switch-branch":
+
+```bash
+$ git checkout ft-switch-branch
+```
+
+List available branches:
+
+```bash
+$ git branch
+```
+
+## Database
+
+Inside the "app" directory, a folder named "instance/" will be created where the database will be located.
