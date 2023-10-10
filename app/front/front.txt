@@ -1,0 +1,10 @@
+front
+|
+|--|--component/
+|--|--pages/
+|--|--store/
+|--|--styles/
+|
+|
+|--index.js
+|--layout.js
