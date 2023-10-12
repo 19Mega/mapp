@@ -11,8 +11,8 @@ class User(db.Model):
     is_active = db.Column(db.Boolean(), unique=False, nullable=False)
 
     # Relationships: 1 user n favorites
-    favorites = db.relationship('Favorite', backref='user', lazy=True)  # <---
-    payments = db.relationship('Payment', backref='user', lazy=True)  # <---
+    # favorites = db.relationship('Favorite', backref='user', lazy=True)  # <---
+    # payments = db.relationship('Payment', backref='user', lazy=True)  # <---
 
     def __repr__(self):
         return f'<User {self.email}>'
