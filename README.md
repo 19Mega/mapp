@@ -17,7 +17,8 @@ venv\Scripts\activate
 
 On macOS and Linux:
 ```bash
-source venv/bin/activate
+source venv/Scripts/activate
+
 ```
 
 After activating the virtual environment, you can run your Flask application. Typically, in a Flask project, you will run the wsgi.py file to start the server.
@@ -79,3 +80,11 @@ $ git branch
 ## Database
 
 Inside the "app" directory, a folder named "instance/" will be created where the database will be located.
+
+
+
+
+
+
+
+pip install -r requirements.txt
