@@ -1,7 +1,9 @@
+# back-end
+node_modules/
 instance/
-./app/__pycache__
 __pycache__/
-./app/__pycache__/admin.cpython-311.pyc
-./app/__pycache__/app.cpython-311.pyc
-./app/__pycache__/models.cpython-311.pyc
-./app/__pycache__/utils.cpython-311.pyc
+venv/
+
+# root
+.env
+
