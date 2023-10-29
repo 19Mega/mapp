@@ -1,8 +1,10 @@
 # back-end
-node_modules/
 instance/
 __pycache__/
 venv/
+
+# front-end
+node_modules/
 
 # root
 .env
