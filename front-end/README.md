@@ -8,13 +8,15 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 
-## How to start
 
-- npm create vite 
+
+## How to start from 0 
+
+- npm create vite  
 Elegimos nombre-proyecto y ponemos React > JavaScript + SWC
 
-- cd nombre-proyecto
-- npm install && npm run dev
+- cd nombre-proyecto  
+- npm install && npm run dev  
 
-https://reactrouter.com/en/main/start/tutorial
-- npm install react-router-dom
+https://reactrouter.com/en/main/start/tutorial  
+- npm install react-router-dom  
