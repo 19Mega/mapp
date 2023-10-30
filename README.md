@@ -82,21 +82,21 @@ Inside the "app" directory, a folder named "instance/" will be created where the
 
 ## HOW TO START BACKEND ✨
 
-cd back-end
-python -m venv venv
+cd back-end  
+python -m venv venv  
 
-venv\Scripts\activate
-source venv/Scripts/activate
+venv\Scripts\activate  
+source venv/Scripts/activate  
 
-pip install -r requirements.txt
+pip install -r requirements.txt  
 
-python wsgi.py
+python wsgi.py  
 
 ## HOW TO START FRONTEND ✨
 
-cd front-end
-npm install
-npm run dev
+cd front-end  
+npm install  
+npm run dev  
 
 
 
