@@ -1,111 +1,77 @@
-# mapp
-
-## How to Run the Project:
+## HOW TO START BACKEND ✨
 
 To run your Flask project, ensure that your virtual environment is activated. If you haven't created a virtual environment yet, you can do so using the following command (make sure you are in the main folder of your project):
 
 ```bash
-python -m venv venv
+# Get in back-end folder:  
+cd back-end  
+
+# Create a new virtual enviroment (only once):  
+python -m venv venv  
+
+# Next, activate the virtual environment:    
+source venv/Scripts/activate  
+
+# Install requirements (only once):  
+pip install -r requirements.txt  
+
+# Run server:
+python wsgi.py  
 ```
 
-## Next, activate the virtual environment:
+## DATABASE ✨
+```
+Inside the "app" directory, a folder named "instance/" will be created where the database will be located.
+```
 
-On Windows:
+## HOW TO START FRONTEND ✨
 ```bash
-venv\Scripts\activate
+# Get in front-end folder:
+cd front-end  
+
+# Install packages (only once):
+npm install  
+
+# Copy the env.example file to get enviroments variables (only once): 
+cp .env.example .env
+
+# Run server: 
+npm run dev  
 ```
 
-On macOS and Linux:
-```bash
-source venv/Scripts/activate
 
-```
+<hr>
+<br></br>
 
-After activating the virtual environment, you can run your Flask application. Typically, in a Flask project, you will run the wsgi.py file to start the server.
-
-## You can do this as follows:
-
-Navigate to the "app" directory (cd app) and run:
-
-```bash
-python wsgi.py
-```
-
-Your Flask application will run and be available at the following local address: http://127.0.0.1:5000/. You can access it from your web browser or make HTTP requests to your routes.
-
-## **START BASH IN AN EMPTY FOLDER**
+## **HOW TO GET THIS REPOSITORY LOCAL**
 Initialize the folder as a Git repository:
 ```bash
-$ git init
-```
+# Initializate git in an empty folder:
+git init
 
-Add a remote repository:
-```bash
-$ git remote add origin https://github.com/19Mega/mapp.git
-```
+# Add a remote repository:
+git remote add origin https://github.com/CodeBo-CDB/proyecto-1
 
-Rename the current branch to "main":
-```bash
-$ git branch -m "main"
-```
+# Rename the current branch to "main":
+git branch -m "main"
 
-Pull changes from the "main" branch:
-```bash
-$ git pull origin main
+# Pull changes from the "main" branch:
+git pull origin main
 ```
 
 ## BRANCH MANAGMENT
-Create a new branch, for example, "ft-new-branch":
-```bash
-$ git branch -b "ft-new-branch"
-```
 
-Switch to a different branch, e.g., "ft-switch-branch":
+
 ```bash
+# Create a new branch "ft-new-branch":
+$ git checkout -b "ft-new-branch"
+
+
+# Switch to a different branch "ft-switch-branch":
 $ git checkout ft-switch-branch
-```
 
-List available branches:
-```bash
+
+# List available branches:
 $ git branch
 ```
 
-## Database
-
-Inside the "app" directory, a folder named "instance/" will be created where the database will be located.
-
-
-
-
-
-
-
-## HOW TO START BACKEND ✨
-
-cd back-end  
-python -m venv venv  
-
-venv\Scripts\activate  
-source venv/Scripts/activate  
-
-pip install -r requirements.txt  
-
-python wsgi.py  
-
-## HOW TO START FRONTEND ✨
-
-cd front-end  
-npm install  
-npm run dev  
-
-
-
-## HOW TO START FRONT-END FROM 0 (NO IN THIS REPOSITORY)
-- npm create vite  
-Elegimos nombre-proyecto y ponemos React > JavaScript + SWC
-
-- cd nombre-proyecto  
-- npm install && npm run dev  
-
-https://reactrouter.com/en/main/start/tutorial  
-- npm install react-router-dom  

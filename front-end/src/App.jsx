@@ -1,30 +1,39 @@
 import { Navigate, Route, Routes } from "react-router-dom"
+
+// Components
 import { Navbar } from "./routes/components/NavBar"
+
+// Pages
 import { HomeScreen } from "./routes/pages/HomeScreen"
 import { AboutScreen } from "./routes/pages/AboutScreen"
 import { ContactScreen } from "./routes/pages/ContactScreen"
-import { UsuarioProvider } from "./routes/context/UsuarioProvider"
-import {LoginScreen} from "./routes/pages/LoginScreen"
+import { LoginScreen } from "./routes/pages/LoginScreen"
+
+//Providers
+import { UserProvider } from "./routes/context/UserProvider"
+import { EndpointProvider } from "./routes/context/EndpointProvider"
+
 
 
 export const App = () =>  {
   return (
-    <UsuarioProvider>
-      <div className=" container-lg container-md container-sm ">
-        <h1>Plantilla Frontend Matias</h1>
-        <Navbar/>     
+    <EndpointProvider>
+        <UserProvider>
+          <div className=" container-lg container-md container-sm ">
+            <Navbar/>     
 
-        <Routes>
-          <Route path="/" element={<HomeScreen/>} />
-          <Route path="/about" element={<AboutScreen/>} />
-          <Route path="/contact" element={<ContactScreen/>} />
-          <Route path="/login" element={<LoginScreen/>} />
+            <Routes>
+              <Route path="/" element={<HomeScreen/>} />
+              <Route path="/about" element={<AboutScreen/>} />
+              <Route path="/contact" element={<ContactScreen/>} />
+              <Route path="/login" element={<LoginScreen/>} />
 
-          <Route path="/*" element={ <Navigate to="/" />}/>
-        </Routes>
+              <Route path="/*" element={ <Navigate to="/" />}/>
+            </Routes>
 
-      </div>
-    </UsuarioProvider>
+          </div>
+        </UserProvider>
+    </EndpointProvider>
   )
 }
 
