@@ -16,7 +16,7 @@ source venv/Scripts/activate
 pip install -r requirements.txt  
 
 # Run server:
-python wsgi.py  
+python app.py  
 ```
 
 ## DATABASE ✨
