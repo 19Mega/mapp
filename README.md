@@ -6,6 +6,9 @@ To run your Flask project, ensure that your virtual environment is activated. If
 # Get in back-end folder:  
 cd back-end  
 
+# Copy the env.example file to get enviroments variables (only once):  
+cp .env.back-example .env  
+
 # Create a new virtual enviroment (only once):  
 python -m venv venv  
 
@@ -16,7 +19,7 @@ source venv/Scripts/activate
 pip install -r requirements.txt  
 
 # Run server:
-python wsgi.py  
+python app.py  
 ```
 
 ## DATABASE ✨
@@ -33,7 +36,7 @@ cd front-end
 npm install  
 
 # Copy the env.example file to get enviroments variables (only once): 
-cp .env.example .env
+cp .env.front-example .env  
 
 # Run server: 
 npm run dev  
@@ -50,7 +53,7 @@ Initialize the folder as a Git repository:
 git init
 
 # Add a remote repository:
-git remote add origin https://github.com/CodeBo-CDB/proyecto-1
+git remote add origin https://github.com/19Mega/mapp
 
 # Rename the current branch to "main":
 git branch -m "main"
@@ -61,15 +64,12 @@ git pull origin main
 
 ## BRANCH MANAGMENT
 
-
 ```bash
 # Create a new branch "ft-new-branch":
 $ git checkout -b "ft-new-branch"
 
-
 # Switch to a different branch "ft-switch-branch":
 $ git checkout ft-switch-branch
-
 
 # List available branches:
 $ git branch
